@@ -97,6 +97,7 @@ header {
   background-image: url(../images/envelope.svg);
   background-repeat: no-repeat;
   background-position: center;
+  margin-right: 10px;
 }
 .phone-nav::before {
   display: inline-block;
