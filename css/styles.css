@@ -89,9 +89,24 @@ header {
 .adres-nav a {
   color: var(--primary-text-color);
 }
-.adres-nav img:hover,
-.adres-nav img:focus {
-  background-color: var(--accent-color);
+.mail-nav::before {
+  display: inline-block;
+  content: ' ';
+  height: 11.2px;
+  width: 16px;
+  background-image: url(../images/envelope.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.phone-nav::before {
+  display: inline-block;
+  content: ' ';
+  height: 14.94px;
+  width: 10px;
+  background-image: url(../images/phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
 }
 /*  */
 .title-nav {
@@ -122,7 +137,10 @@ nav .list :focus {
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: rgba(47, 48, 58, 0.8);
-  /* background-image: url(../images/header.jpg); */
+  background-image: url(../images/header.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .hero h1 {
   font-weight: 900;
