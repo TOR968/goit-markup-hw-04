@@ -137,8 +137,13 @@ nav .list :focus {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: rgba(47, 48, 58, 0.8);
-  background-image: url(../images/header.jpg);
+  background-color: var(--primary-text-color);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/header.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -192,7 +197,7 @@ h1 {
   letter-spacing: 0.06em;
 }
 .button::after {
-  content: " ";
+  content: ' ';
   background-image: url(../images/portfolio-img/iconsend.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -220,22 +225,22 @@ h1 {
 
   border-radius: 4px;
 }
-.img-antenna{
+.img-antenna {
   background-image: url(../images/Antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
-.img-clock{
+.img-clock {
   background-image: url(../images/clock.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
-.img-diagram{
+.img-diagram {
   background-image: url(../images/diagram.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
-.img-astronaut{
+.img-astronaut {
   background-image: url(../images/astronaut1.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -346,7 +351,7 @@ h1 {
   display: flex;
   justify-content: center;
 }
-.social .item-link{
+.social .item-link {
   width: 44px;
   height: 44px;
 }
@@ -361,7 +366,7 @@ h1 {
 .us .social {
   padding-bottom: 24px;
 }
-.img-instagram{
+.img-instagram {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -369,7 +374,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-.img-twitter{
+.img-twitter {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -377,7 +382,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-.img-facebook{
+.img-facebook {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -385,7 +390,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
 }
-.img-linkedin{
+.img-linkedin {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -492,7 +497,7 @@ address {
 .join .item-link:focus {
   background-color: var(--accent-color);
 }
-.img-instagram2{
+.img-instagram2 {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -500,7 +505,7 @@ address {
   background-repeat: no-repeat;
   background-position: center;
 }
-.img-twitter2{
+.img-twitter2 {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -508,7 +513,7 @@ address {
   background-repeat: no-repeat;
   background-position: center;
 }
-.img-facebook2{
+.img-facebook2 {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -516,7 +521,7 @@ address {
   background-repeat: no-repeat;
   background-position: center;
 }
-.img-linkedin2{
+.img-linkedin2 {
   display: inline-block;
   width: 44px;
   height: 44px;
