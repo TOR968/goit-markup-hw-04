@@ -92,17 +92,17 @@ header {
 .mail-nav::before {
   display: inline-block;
   content: ' ';
-  height: 11.2px;
+  height: 12px;
   width: 16px;
   background-image: url(../images/envelope.svg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left bottom;
   margin-right: 10px;
 }
 .phone-nav::before {
   display: inline-block;
   content: ' ';
-  height: 14.94px;
+  height: 15px;
   width: 10px;
   background-image: url(../images/phone.svg);
   background-repeat: no-repeat;
@@ -191,8 +191,14 @@ h1 {
   text-align: center;
   letter-spacing: 0.06em;
 }
-.button img {
-  padding-left: 10px;
+.button::after {
+  content: " ";
+  background-image: url(../images/portfolio-img/iconsend.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
 }
 /*  */
 .function {
@@ -211,8 +217,30 @@ h1 {
   height: 120px;
   margin-bottom: 30px;
   background-color: var(--second-background);
+
   border-radius: 4px;
 }
+.img-antenna{
+  background-image: url(../images/Antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img-clock{
+  background-image: url(../images/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img-diagram{
+  background-image: url(../images/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img-astronaut{
+  background-image: url(../images/astronaut1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .function a:hover,
 .function a:focus {
   background-color: var(--accent-color);
@@ -278,11 +306,6 @@ h1 {
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
-/* .item .john {
-  width: 278px;
-  height: 260px;
-  background-image: url(../images/john.jpg);
-  border-radius: 4px 4px 0px 0px;} */
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -319,17 +342,18 @@ h1 {
   line-height: 1.19;
   text-align: center;
 }
-.team a,
-.team img {
-  display: block;
-}
-.team a:hover,
-.team a:focus {
-  background-color: var(--accent-color);
-}
 .social {
   display: flex;
   justify-content: center;
+}
+.social .item-link{
+  width: 44px;
+  height: 44px;
+}
+.social .item-link:hover,
+.social .item-link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
 }
 .social .item-link + .item-link {
   margin-left: 10px;
@@ -337,6 +361,39 @@ h1 {
 .us .social {
   padding-bottom: 24px;
 }
+.img-instagram{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../images/instagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img-twitter{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../images/twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img-facebook{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../images/facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img-linkedin{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../images/linkedin.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 /*  */
 .client {
   display: flex;
@@ -383,7 +440,7 @@ footer {
   display: flex;
 }
 .logo-adress {
-  padding: 48px 179px 28px 0;
+  padding: 48px 69px 28px 0;
 }
 .connect {
   padding: 56px 0;
@@ -425,12 +482,49 @@ address {
   margin-left: 10px;
 }
 .join .item-link {
-  background: rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
-.join a:hover,
-.join a:focus {
+.join .item-link:hover,
+.join .item-link:focus {
   background-color: var(--accent-color);
 }
+.img-instagram2{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../images/instagram2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img-twitter2{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../images/twitter2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img-facebook2{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../images/facebook2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.img-linkedin2{
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-image: url(../images/linkedin2.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 address a {
   color: var(--adres-text-color);
 }
