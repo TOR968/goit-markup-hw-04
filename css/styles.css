@@ -137,6 +137,7 @@ nav .list :focus {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
   background-color: var(--primary-text-color);
   background-image: linear-gradient(
       to right,
@@ -147,6 +148,8 @@ nav .list :focus {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero h1 {
   font-weight: 900;
