@@ -407,19 +407,28 @@ h1 {
   display: flex;
   justify-content: center;
 }
-/* заглушка для img поки не розбирали */
-.client img {
-  width: 170px;
-  height: 90px;
+.icon-company{
+padding-top: auto;
+}
+.company-lynk{
+  display: block;
+}
+.icon-company:hover,
+.icon-company:focus{
+  --color4: var(--accent-color);
 }
 /*  */
 .client .item {
+  width: 170px;
+  height: 90px;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 .client .item + .item {
   margin-left: 30px;
+}
+.client .item:hover{
+  border: 1px solid var(--accent-color)
 }
 .company {
   padding-top: 94px;
@@ -434,10 +443,10 @@ h1 {
   margin-top: 0;
   margin-bottom: 50px;
 }
-.company a:hover,
+/* .company a:hover,
 .company a:focus {
   background-color: var(--accent-color);
-}
+} */
 /*  */
 
 footer {
