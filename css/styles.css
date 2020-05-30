@@ -89,24 +89,12 @@ header {
 .adres-nav a {
   color: var(--primary-text-color);
 }
-.mail-nav::before {
-  display: inline-block;
-  content: ' ';
-  height: 12px;
-  width: 16px;
-  background-image: url(../images/envelope.svg);
-  background-repeat: no-repeat;
-  background-position: left bottom;
-  margin-right: 10px;
+.img-adres-nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.phone-nav::before {
-  display: inline-block;
-  content: ' ';
-  height: 15px;
-  width: 10px;
-  background-image: url(../images/phone.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.icon-adres-nav{
   margin-right: 10px;
 }
 /*  */
@@ -130,6 +118,7 @@ nav span {
 nav .list :hover,
 nav .list :focus {
   color: var(--accent-color);
+  --color5: var(--accent-color);
 }
 /*  */
 .hero {
@@ -297,8 +286,7 @@ h1 {
   padding-bottom: 94px;
   background-color: var(--second-background);
 }
-.team img,
-.team a {
+.team img{
   display: block;
 }
 .team h2 {
@@ -350,10 +338,7 @@ h1 {
 .img-social:focus{
   border-radius: 50%;
   background-color: var(--accent-color);
-}
-.icon-social:hover,
-.icon-social:focus{
- --color4: var(--primary-white-color);
+  --color4: var(--primary-white-color);
 }
 .icon-social{
   width: 20px;
@@ -374,9 +359,6 @@ h1 {
 .client .item:hover,
 .client .item:focus {
   border: 1px solid var(--accent-color);
-}
-.icon-company:hover,
-.icon-company:focus {
   --color4: var(--accent-color);
 }
 .img-client {
