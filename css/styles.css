@@ -560,8 +560,8 @@ footer p {
 .project {
   padding-bottom: 94px;
 }
-.project a:hover,
-.project a:focus {
+.project img :hover,
+.project img :focus {
   background: rgba(33, 150, 243, 0.9);
   border-radius: 5px 5px 0px 0px;
 }
